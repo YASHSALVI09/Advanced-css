@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: aquamarine;
+            margin:auto;
+            animation-name: abc;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;            
+        }
+        @keyframes abc{
+            0%{
+            transform: translateY(0);
+            }
+            40%{
+            transform: translateY(-110px);
+            }
+            50%{
+            transform: translateY(0px);
+            }
+            60%{
+            transform: translateY(-20px);
+            }
+            100%{
+            transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

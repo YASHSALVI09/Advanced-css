@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 200px;
+            background-color: aquamarine;
+            /* transform: translate(200px, 400px);
+            transform: rotateY(50deg); */
+            /* transform: scaleX(0.5);
+            transform: skewX(30deg); */
+            /* transform: matrix(scaleX,skewY,skewX,sacleY,
+            translateX,translateY); */
+            /* transform: matrix(1, 1.5, -0.5, 1, 200, 50); */
+        }
+        button:hover{
+            background-color: aqua;
+            border: 5px solid cornflowerblue;
+
+        }
+        button{
+            transition-property: background, border;
+            transition-duration: 5s;
+            transition: 3s;
+            transition-timing-function: ease-out;
+            transition-delay: 2s; 
+        }
+    </style>
+</head>
+<body>
+    <button>
+        click me
+    </button>
+    <div></div>    
+</body>
+</html>

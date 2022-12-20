@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text</title>
+    <style>
+        div{
+            margin: 0;
+            padding: 0;
+        }
+        .text-box{
+            font-size: 100px;
+            font-family: 'Times New Roman', Times, serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+        span{
+            display: inline-block;
+            font-weight: bolder;
+            animation-duration: 3s;
+            animation-name: abc;
+            animation:abc 2s infinite;
+        }
+        @keyframes abc{
+            0%{
+            transform: translateY(0);
+            }
+            100%{
+            transform: translateY(0%);
+            }
+            50%{
+            transform: translateY(-20%);
+            border-bottom: 15px blue;
+            }           
+        }
+        span:nth-child(1){
+            animation-delay:0.1s; 
+        }
+        span:nth-child(2){
+            animation-delay:0.2s; 
+        }
+        span:nth-child(3){
+            animation-delay:0.3s; 
+        }
+        span:nth-child(4){
+            animation-delay:0.4s; 
+        }
+        span:nth-child(5){
+            animation-delay:0.5s; 
+        }
+        span:nth-child(6){
+            animation-delay:0.6s; 
+        }
+    </style>
+</head>
+<body>
+    <div class="text-box">
+    <span>Z</span>
+    <span>O</span>
+    <span>Y</span>
+    <span>A</span>
+    <span>N</span>
+    <span>I</span>
+
+    </div>
+    
+</body>
+</html>
